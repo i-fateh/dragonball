@@ -173,6 +173,7 @@ for (var i = 0; i < 8; i++) {
           persoLeft.src = this.getAttribute('src');
           if(this.getAttribute('src') === './images/goku.png'){
               backLeft.style.backgroundImage = 'url(./images/home.png)'
+              document.querySelector('.blocAll').style.backgroundColor = "black"
               backLeft.style.transition = "2s"
               backLeft.style.animationName = "animLeft"
               goku.play();
@@ -181,22 +182,27 @@ for (var i = 0; i < 8; i++) {
             backLeft.style.backgroundImage = 'url(./images/space.jpg)'
             gokublue.play();
             gokublue.volume = .4;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJ.png'){
             gokussj.play();
             gokussj.volume = .4;
             backLeft.style.backgroundImage = 'url(./images/namek.png)'
+            document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJGod.png'){
             gokuDBS.play();
             gokuDBS.volume = .4;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backLeft.style.backgroundImage = 'url(./images/volcano.jpg)'
           } else if(this.getAttribute('src') === './images/ssjGod.png'){
             backLeft.style.backgroundImage = 'url(./images/dbsuper.jpg)'
             gokugod.play();
             gokugod.volume = .4;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJDbSuper.png'){
             backLeft.style.backgroundImage = 'url(./images/kamehouse.png)'
             gokusuper.play();
             gokusuper.volume = .4;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
           }
       })
     }(i))
@@ -265,26 +271,32 @@ for (var i = 0; i < 8; i++) {
           if(this.getAttribute('src') === './images/vegeta.png'){
             vegeta.play();
             vegeta.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/vegetaNamek.jpg)'
         } else if(this.getAttribute('src') === './images/freezer.png'){
             freezer.play();
             freezer.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/freezerLand.jpg)'
         } else if(this.getAttribute('src') === './images/cell.png'){
             cell.play();
             cell.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/cellCity.jpg)'
         } else if(this.getAttribute('src') === './images/broly.png'){
             broly.play();
             broly.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/brolyLand.jpg)'
         } else if(this.getAttribute('src') === './images/jiren.png'){
             jiren.play();
             jiren.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/gokudbsuper.jpg)'
         } else if(this.getAttribute('src') === './images/picc.png'){
             piccolo.play();
             piccolo.volume = 1;
+            document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/landPiccolo.png)'
         }
       })
