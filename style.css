@@ -1,0 +1,497 @@
+/* MESSAGE AUX RECRUTEURS :)
+    Ce code a été ecris il y a déja quelques années
+    Je le laisse dans l'état afin de garder une trace de mes progrès
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./images/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100vw; min-height: 100vh;
+    overflow-y: hidden !important;
+}
+
+
+.myButton {
+    background-color:#ffe100;
+    width: 100vw;
+    display:inline-block;
+    cursor:pointer;
+    text-align: center;
+    font-family:Arial;
+    color: black;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 0px;
+    text-decoration:none;
+    position: absolute !important; left: 0px; bottom: 0px; right: 0px;
+}
+.myButton:hover {
+    background-color:#e0c600;
+}
+
+.gokuThumb {
+    background-image: url('./images/goku.png');
+}
+.gokuSSJThumb {
+    background-image: url('./images/gokuSSJ.png');
+}
+.gokuSSJBlueThumb {
+    background-image: url('./images/ssjGod.png');
+    background-position:bottom;
+    background-size: cover;
+}
+
+.gokuKameha {
+    background-image: url('./images/gokuKameha.png');
+    background-position:bottom;
+    background-size: cover;
+}
+
+.gokuGod {
+    background-image: url('./images/Goku-SSJ-Blue.png');
+    background-position:bottom;
+    background-size: cover;
+}
+
+.controls {
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    top: 30px; left: 0; right: 0;
+}
+
+.circle {
+    display:  inline-flex;
+    margin: 20px 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: cover;
+    z-index: 99;
+    outline: solid white 2px;
+}
+.circle:hover {
+    opacity: 0.8;
+    transform: scale(.95);
+    transition: .2s;
+}
+
+.circle:active {
+    opacity: 0.9;
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+.boxGoku {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 650px;
+    padding: 0px;
+    margin-top: -725px;
+    overflow: hidden;
+    animation-name: goku;
+    animation-duration: .7s;
+}
+
+.goku {
+    height: 650px;
+    width: 650px;
+    margin-top: 0px;
+    animation-name: goku;
+    animation-duration: .7s;
+}
+
+
+.logo {
+    width: 40vw;
+    margin-top: 650px;
+    z-index: 1;
+    animation-duration: 1.2s;
+    animation-name: logo;
+    animation-duration: .7s;
+}
+
+@keyframes goku {
+    from {
+        margin-top: 200px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Battle Page */
+
+.container {
+    background: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.blocAll {
+    background-image: url('./images/toriyama.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100vw; height: 100vh;
+    overflow: hidden !important;
+}
+
+.blocLeft {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    animation-name: animLeft;
+    animation-duration: .4s;
+    overflow: hidden !important;
+}
+.persoLeft {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    animation-name:appearLeft;
+    animation-duration: .3s;
+    overflow: hidden !important;
+}
+
+.blocRight {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    animation-name: animRight;
+    animation-duration: .4s;
+    overflow: hidden !important;
+}
+
+.persoRight {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    animation-name:appearRight;
+    animation-duration: .3s;
+    overflow: hidden !important;
+}
+
+
+
+@keyframes appearRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100vh)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0vh)
+    }
+}
+
+
+@keyframes appearLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vh)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0vh)
+    }
+}
+
+
+@keyframes animLeft {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes animRight {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.grillePerso1 {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+.grillePerso2 {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+.perso1 {
+    background: rgb(255, 255, 255);
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border: solid 5px white;
+    animation-name: icon1;
+    animation-duration: 4s;
+}
+@keyframes icon1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.perso2 {
+    background: rgb(255, 184, 52);
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border: solid 5px white;
+    animation-name: icon2;
+    animation-duration: 4s;
+}
+@keyframes icon2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.perso1:hover, .perso2:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+    transition: .2s;
+    background: red;
+    filter: brightness(1.2);
+}
+.perso1:active, .perso2:active {
+    transition: .2s;
+    filter: blur(3px);
+    background: white;
+}
+
+
+#vs {
+    width: 100vw; height: 100vh; z-index: 99; display: none;
+    background-image: url('./images/vs.png');
+    background-size: contain; position: absolute; top: 0; left: 0;
+    animation-name: vs;
+    animation-duration: .3s;
+    background-position: center; background-repeat: no-repeat;
+}
+
+@keyframes vs {
+    0% {
+        opacity: 0;
+        transform: scale(3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles pour cette Media Queries */
+    body {
+        height: 100vh !important; width: 100vw !important;
+        overflow: hidden; display: flex; align-items: center; justify-content: center;
+    }
+    .logo {
+        width: 90%;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    #vs {
+        width: 100vw; height: 100vh; z-index: 99; display: none;
+        background-image: url('./images/vs.png');
+        background-size: contain; position: absolute; top: 0; left: 0;
+        animation-name: vs;
+        animation-duration: .3s;
+        background-position: center; background-repeat: no-repeat;
+    }
+
+    @keyframes vs {
+        0% {
+            opacity: 0;
+            transform: scale(3);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .boxGoku {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        overflow: hidden;
+    }
+    
+    .goku {
+        height: 50vh;
+        margin-top: 100vh;
+        bottom: 110px;
+    }
+
+    .myButton {
+        width: 100vw;
+        font-size:20px;
+        font-weight:bold;
+        position: absolute; left: 0; bottom: 0;
+        background-color: orange;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+
+    .blocLeft {
+        width: 100vw;
+        height: 50vh;
+        position: absolute;
+        top: 0;
+    }    
+
+    .blocRight {
+        width: 100vw;
+        height: 50vh;
+        position: absolute;
+        right: 0px;
+        top: 50vh !important; 
+    }
+
+    .blocAll {
+        background-position: center;
+        width: 100vw; height: 100vh;
+        background-color: #e0c60065; z-index: 99;
+    }
+
+    .grillePerso1 {
+        width: 50%;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        bottom: 0px; left: 0px;
+        z-index: 9999;
+    }
+    
+    .grillePerso2 {
+        width: 50%;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        bottom: 0px; right: 0px;
+        z-index: 9999;
+    }
+    
+    .perso1 {
+        background: rgb(255, 255, 255);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 7px;
+        border: solid 0px white;
+        animation-name: icon1;
+        animation-duration: 4s;
+    }
+    
+    .perso2 {
+        background: rgb(255, 184, 52);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 7px;
+        border: solid 0px white;
+        animation-name: icon2;
+        animation-duration: 4s;
+    }
+
+
+    @keyframes appearRight {
+        0% {
+            opacity: 0;
+            transform: translateX(-100vh)
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0vh)
+        }
+    }
+    
+    
+    @keyframes appearLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(100vh)
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0vh)
+        }
+    }
+
+}
+
+
+
