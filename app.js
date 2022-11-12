@@ -149,17 +149,10 @@ for (var i = 0; i < 8; i++) {
     (function(x) {
       getAllImages[x].addEventListener('click', function() {
 
-
         if(persoRight.src[persoRight.src.length-1] !== "g" && persoLeft.src[persoLeft.src.length-1] !== "g"){
           document.getElementById('vs').style.display = "none"      
         } else {
           document.getElementById('vs').style.display = "block"
-        }
-
-        if(persoRight.src == persoLeft.src){
-          console.log("same");
-        } else {
-          console.log('different');
         }
 
         select.pause();
@@ -255,11 +248,7 @@ for (var i = 0; i < 8; i++) {
           document.getElementById('vs').style.display = "block"
         }
 
-        if(persoRight.src == persoLeft.src){
-          console.log("same");
-        } else {
-          console.log('different');
-        }
+
 
         persoRight.src = this.getAttribute('src');
           select.pause();
