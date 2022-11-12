@@ -31,7 +31,7 @@ loadMusic = () => {
     superSound.pause();
     superSound.currentTime = 0;
     namekSound.play();
-    namekSound.volume = 0.4;
+    namekSound.volume = 0.2;
 }
 
 loadMusicSuper = () => {
@@ -45,8 +45,8 @@ loadMusicSuper = () => {
     namekSound.currentTime = 0;
     kaioken.play();
     superSound.play();
-    kaioken.volume = 1;
-    superSound.volume = 0.4;
+    kaioken.volume = .2;
+    superSound.volume = 0.2;
 }
 
 namek = () => {
@@ -59,12 +59,12 @@ namek = () => {
     kaioken.pause();
     kaioken.currentTime = 0;
     ssjSound.play();
-    ssjSound.volume = 0.4;
+    ssjSound.volume = 0.2;
     source.src = './images/gokuSSJ.png';
     loadMusic();
     namekLand.style.backgroundImage = "url('./images/namek.png')"
     appear.play();
-    appear.volume = 1;
+    appear.volume = .5;
 }
 
 volcano = () => {
@@ -77,14 +77,14 @@ volcano = () => {
     kaioken.pause();
     kaioken.currentTime = 0;
     ssjSound.play();
-    ssjSound.volume = 0.4;
+    ssjSound.volume = 0.2;
     source.src = './images/Goku-SSJ-Blue.png';
     loadMusic();
     namekLand.style.backgroundImage = "url('./images/volcano.jpg')"
     appear.play();
-    appear.volume = 1;
+    appear.volume = .2;
     scream.play();
-    scream.volume = 1;
+    scream.volume = .2;
 }
 
 dbsuper = () => {
@@ -92,7 +92,7 @@ dbsuper = () => {
     loadMusicSuper();
     namekLand.style.backgroundImage = "url('./images/dbsuper.jpg')"
     appear.play();
-    a.volume = 1;
+    a.volume = .2;
 }
 
 home = () => {
@@ -111,9 +111,9 @@ home = () => {
     ssjSound.pause();
     ssjSound.currentTime = 0;
     homeSound.play();
-    homeSound.volume = 1;
+    homeSound.volume = .2;
     appear.play();
-    a.volume = 1;
+    a.volume = .2;
 }
 
 kamehaaa = () => {
@@ -130,9 +130,9 @@ kamehaaa = () => {
     namekLand.style.backgroundImage = 'url(./images/space.jpg)';
     source.src = './images/gokuKameha.png';
     kameha.play();
-    kameha.volume = 1;
+    kameha.volume = .2;
     appear.play();
-    a.volume = 1;
+    a.volume = .2;
 }
 
 let perso1Src = document.querySelector('.perso:nth-child(1n)');
@@ -160,7 +160,7 @@ for (var i = 0; i < 8; i++) {
         select.play();
         select.volume = 0.3;
         appear.play();
-        appear.volume = 0.7;
+        appear.volume = 0.5;
         ambianceSound.play();
         ambianceSound.volume = 0.3;
           persoLeft.src = this.getAttribute('src');
@@ -170,31 +170,31 @@ for (var i = 0; i < 8; i++) {
               backLeft.style.transition = "2s"
               backLeft.style.animationName = "animLeft"
               goku.play();
-              goku.volume = .4;
+              goku.volume = .2;
           } else if(this.getAttribute('src') === './images/gokuKameha.png'){
             backLeft.style.backgroundImage = 'url(./images/space.jpg)'
             gokublue.play();
-            gokublue.volume = .4;
+            gokublue.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJ.png'){
             gokussj.play();
-            gokussj.volume = .4;
+            gokussj.volume = .2;
             backLeft.style.backgroundImage = 'url(./images/namek.png)'
             document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJGod.png'){
             gokuDBS.play();
-            gokuDBS.volume = .4;
+            gokuDBS.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backLeft.style.backgroundImage = 'url(./images/volcano.jpg)'
           } else if(this.getAttribute('src') === './images/ssjGod.png'){
             backLeft.style.backgroundImage = 'url(./images/dbsuper.jpg)'
             gokugod.play();
-            gokugod.volume = .4;
+            gokugod.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
           } else if(this.getAttribute('src') === './images/gokuSSJDbSuper.png'){
             backLeft.style.backgroundImage = 'url(./images/kamehouse.png)'
             gokusuper.play();
-            gokusuper.volume = .4;
+            gokusuper.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
           }
       })
@@ -259,32 +259,32 @@ for (var i = 0; i < 8; i++) {
           appear.volume = 0.7;
           if(this.getAttribute('src') === './images/vegeta.png'){
             vegeta.play();
-            vegeta.volume = 1;
+            vegeta.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/vegetaNamek.jpg)'
         } else if(this.getAttribute('src') === './images/freezer.png'){
             freezer.play();
-            freezer.volume = 1;
+            freezer.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/freezerLand.jpg)'
         } else if(this.getAttribute('src') === './images/cell.png'){
             cell.play();
-            cell.volume = 1;
+            cell.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/cellCity.jpg)'
         } else if(this.getAttribute('src') === './images/broly.png'){
             broly.play();
-            broly.volume = 1;
+            broly.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/brolyLand.jpg)'
         } else if(this.getAttribute('src') === './images/jiren.png'){
             jiren.play();
-            jiren.volume = 1;
+            jiren.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/gokudbsuper.jpg)'
         } else if(this.getAttribute('src') === './images/picc.png'){
             piccolo.play();
-            piccolo.volume = 1;
+            piccolo.volume = .2;
             document.querySelector('.blocAll').style.backgroundColor = "black"
             backRight.style.backgroundImage = 'url(./images/landPiccolo.png)'
         }
