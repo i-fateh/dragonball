@@ -156,7 +156,7 @@ body {
 }
 
 .blocAll {
-    background-image: url('./images/toriyama.webp');
+    background-image: url('./images/toriyama.png');
     background-size: cover;
     background-position: center;
     width: 100vw; height: 100vh;
@@ -255,10 +255,11 @@ body {
 
 .grillePerso1 {
     background: transparent;
-    width: 100%;
+    width: 50vw;
     height: auto;
     position: absolute;
-    bottom: 150px;
+    bottom: 0px;
+    left:0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -267,10 +268,10 @@ body {
 
 .grillePerso2 {
     background: transparent;
-    width: 100%;
+    width: 50vw !important;
     height: auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px; right: 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -279,9 +280,9 @@ body {
 
 .perso1 {
     background: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
     border: solid 5px white;
     animation-name: icon1;
     animation-duration: 4s;
@@ -297,9 +298,9 @@ body {
 
 .perso2 {
     background: rgb(255, 184, 52);
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    width: 90px;
+    height: 90px;
+    margin: 10px;
     border: solid 5px white;
     animation-name: icon2;
     animation-duration: 4s;
