@@ -27,7 +27,6 @@ var vegeta = new Audio('./audios/vegeta.ogg');
 
 
 function muteAll(){
-console.log("Browser tab is hidden")
 
 ssjSound.pause();
 ssjSound.currentTime = 0;
@@ -106,7 +105,7 @@ document.addEventListener("visibilitychange", function() {
   if (document.hidden){
     muteAll()
   } else {
-      console.log("Browser tab is visible")
+      console.log("Sound OK")
   }
 });
 
