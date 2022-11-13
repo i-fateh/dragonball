@@ -77,8 +77,10 @@ body {
     margin: 20px 30px;
     width: 100px;
     height: 100px;
+    aspect-ratio: 1 / 1;
     border-radius: 100%;
     background-size: cover;
+    background-position: center;
     z-index: 99;
     outline: solid white 2px;
 }
