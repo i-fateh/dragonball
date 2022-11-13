@@ -145,6 +145,7 @@ var getAllImages = document.getElementsByTagName('img');
 let backLeft = document.querySelector('.blocLeft')
 let backRight = document.querySelector('.blocRight')
 
+
 function changeBack() {
   document.querySelector('.blocAll').style.backgroundImage = "url(./images/backBlack.jpeg)";
 }
