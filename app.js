@@ -1,7 +1,7 @@
 let source = document.querySelector('.goku');
+let namekLand = document.querySelector('body');
 
 let ssjSound = new Audio('./audios/ssj.mp3');
-let namekLand = document.querySelector('body');
 var superSound = new Audio('./audios/Goku vs Jiren.mp3');
 var namekSound = new Audio('./audios/dbzTone.mp3');
 var homeSound = new Audio('./audios/dragonball.mp3');
@@ -24,6 +24,92 @@ var gokublue = new Audio('./audios/gokussjsuper.ogg');
 var gokuDBS = new Audio('./audios/gkugod.ogg');
 var goku = new Audio('./audios/goku.ogg');
 var vegeta = new Audio('./audios/vegeta.ogg');
+
+
+function muteAll(){
+console.log("Browser tab is hidden")
+
+ssjSound.pause();
+ssjSound.currentTime = 0;
+
+superSound.pause();
+superSound.currentTime = 0;
+
+namekSound.pause();
+namekSound.currentTime = 0;
+
+homeSound.pause();
+homeSound.currentTime = 0;
+
+kaioken.pause();
+kaioken.currentTime = 0;
+
+
+kameha.pause();
+kameha.currentTime = 0;
+
+appear.pause();
+appear.currentTime = 0;
+
+scream.pause();
+scream.currentTime = 0;
+
+broly.pause();
+broly.currentTime = 0;
+
+jiren.pause();
+jiren.currentTime = 0;
+
+freezer.pause();
+freezer.currentTime = 0;
+
+piccolo.pause();
+piccolo.currentTime = 0;
+
+cell.pause();
+cell.currentTime = 0;
+
+ambianceSound.pause();
+ambianceSound.currentTime = 0;
+
+select.pause();
+select.currentTime = 0;
+
+scream.pause();
+scream.currentTime = 0;
+
+
+goku.pause();
+goku.currentTime = 0;
+
+gokuDBS.pause();
+gokuDBS.currentTime = 0;
+
+gokublue.pause();
+gokublue.currentTime = 0;
+
+gokusuper.pause();
+gokusuper.currentTime = 0;
+
+gokugod.pause();
+gokugod.currentTime = 0;
+
+gokussj.pause();
+gokussj.currentTime = 0;
+
+
+vegeta.pause();
+vegeta.currentTime = 0;
+}
+// pause all musics when user leave the page
+document.addEventListener("visibilitychange", function() {
+  if (document.hidden){
+    muteAll()
+  } else {
+      console.log("Browser tab is visible")
+  }
+});
+
 
 loadMusic = () => {
     homeSound.pause();
@@ -92,7 +178,7 @@ dbsuper = () => {
     loadMusicSuper();
     namekLand.style.backgroundImage = "url('./images/dbsuper.jpg')"
     appear.play();
-    a.volume = .2;
+    appear.volume = .5;
 }
 
 home = () => {
@@ -113,7 +199,7 @@ home = () => {
     homeSound.play();
     homeSound.volume = .2;
     appear.play();
-    a.volume = .2;
+    appear.volume = .2;
 }
 
 kamehaaa = () => {
@@ -132,7 +218,7 @@ kamehaaa = () => {
     kameha.play();
     kameha.volume = .2;
     appear.play();
-    a.volume = .2;
+    appear.volume = .2;
 }
 
 let perso1Src = document.querySelector('.perso:nth-child(1n)');
