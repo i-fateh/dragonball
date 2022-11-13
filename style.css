@@ -76,8 +76,8 @@ body {
 .circle {
     display:  inline-flex;
     margin: 20px 30px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
     background-size: cover;
@@ -163,7 +163,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100vw; height: 100vh;
-    overflow: hidden !important;
+    overflow: hidden !important; z-index: 9 !important;
 }
 
 .blocLeft {
@@ -266,7 +266,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .grillePerso2 {
@@ -278,13 +278,13 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .perso1 {
     background: rgb(255, 255, 255);
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
     border: solid 5px white;
     animation-name: icon1;
@@ -301,8 +301,8 @@ body {
 
 .perso2 {
     background: rgb(255, 184, 52);
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
     border: solid 5px white;
     animation-name: icon2;
@@ -425,19 +425,13 @@ body {
         top: 50vh !important; 
     }
 
-    .blocAll {
-        background-position: center;
-        width: 100vw; height: 100vh;
-        background-color: #e0c60065; z-index: 99;
-    }
-
     .grillePerso1 {
         width: 50%;
         height: auto;
         z-index: 1;
         position: absolute;
         bottom: 0px; left: 0px;
-        z-index: 9999;
+        z-index: 999;
     }
     
     .grillePerso2 {
@@ -446,7 +440,7 @@ body {
         z-index: 1;
         position: absolute;
         bottom: 0px; right: 0px;
-        z-index: 9999;
+        z-index: 999;
     }
     
     .perso1 {
